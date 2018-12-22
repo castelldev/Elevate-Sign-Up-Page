@@ -6,7 +6,6 @@
 body{
   display: block;
   position: relative;
-  /* border:solid red 5px; */
   overflow: hidden;
   margin:0px;
   font-family: 'Ailerons';
@@ -19,18 +18,14 @@ body{
     min-height: 100%;
     top:0;
     left:0;
-    /* width: 100%;    
-    height:auto; */
     z-index: -1;
 }
 h1{
     position: absolute;
     font-size: 10em;
-    /* top:calc(50vh -50px); */
-top:calc(50% - 100px);
-left:50%;
-transform: translateX(-50%);
-    /* text-align: center; */
+    top:calc(50% - 100px);
+    left:50%;
+    transform: translateX(-50%);
     height:50px;
     margin: auto;
     color: white;
@@ -74,7 +69,6 @@ h2{
     font-size:3em;
     font-weight: bold;
     color: black;
-    /* border:solid; */
 }
 .dot{
     display: block;

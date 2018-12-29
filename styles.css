@@ -68,8 +68,8 @@ h2{
     font-family: 'Verdana', sans-serif;
     font-size:3em;
     font-weight: bold;
-    color: black;
 }
+
 .dot{
     display: block;
     width:.5em;
@@ -100,7 +100,7 @@ input,button{
     background:whitesmoke;
     border-radius: 5rem;
     font-size: 1.5em;
-    transition: box-shadow 500ms ease  ;
+    transition: box-shadow 500ms ease;
 }
 input:hover,button:hover{
     box-shadow: 0 2px 25px 5px #EE990025;
@@ -131,4 +131,45 @@ footer{
     bottom:0px;
     margin:5px;
     color: gray;
+}
+/* Mobile UI */
+@media only screen and (max-width:650px){
+    #elevator-video-bg{ display:none;}
+    h1{
+        animation:none;
+        top:0px;
+        left:0px;
+        font-size: 3em;
+        transform: none; 
+        color: #EE9900;
+        z-index: 3;
+    }
+    h2{
+        font-size:2em;
+        color: transparent;
+        transform: translateY(200%);
+        animation: rise 500ms ease-out forwards;
+        z-index:-1;
+    }
+    @keyframes rise{
+        100%{
+            color: black;
+            transform: none;
+        }
+    }
+    main{ 
+        left:0%;
+        width:100%;
+        min-width: 200px;
+        animation:none;
+    }
+    form{
+        width:90%;
+    }
+    input,button{
+        padding: 1em;
+        margin-top: none;
+        margin-bottom: none;
+        font-size:1em;
+    }
 }
